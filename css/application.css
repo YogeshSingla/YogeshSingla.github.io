@@ -510,7 +510,6 @@ body {
 }
 
 .left-align-container {
-  align-items: left;
   text-align: left;
 }
 
@@ -553,7 +552,7 @@ a, b {
 }
 
 a, a:visited {
-  color: #23ccbe;
+  color: #20b0a0;
   text-decoration: none;
   border-bottom: 1px solid #ededed;
 }
@@ -581,4 +580,3 @@ a:hover, a:focus {
   margin: 0 10px;
 }
 
-/*# sourceMappingURL=application.css.map */
