@@ -509,6 +509,15 @@ body {
   -webkit-box-align: center;
 }
 
+.left-align-container {
+  align-items: left;
+  text-align: left;
+}
+
+.list-entry{
+  margin-left: 50px;
+}
+
 .outer-container {
   max-width: 1200px;
   margin: 0 auto;
