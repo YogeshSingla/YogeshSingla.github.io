@@ -526,6 +526,9 @@ body {
 .list-entry{
   margin-left: 50px;
 }
+.list-entry-line-2{
+  margin-left: 502px;
+}
 
 .outer-container {
   max-width: 1200px;
