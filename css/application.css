@@ -510,10 +510,10 @@ textarea {
 /**
  * Remove most spacing between table cells.
  */
-table {
+/*table {
   border-collapse: collapse;
   border-spacing: 0;
-}
+}*/
 
 html, body {
   height: 100%;
@@ -535,15 +535,18 @@ body {
 .list-entry{
   padding-left: 50px;
 }
-.list-entry-table{
-  padding-left: 50px;
-}
-.list-entry-line-2{
+/*.list-entry-line-2{
   margin-left: 502px;
+}*/
+
+table{
+  align-self: center;
+  width: 100%;
+  text-align: left;
 }
 
 .outer-container {
-  max-width: 1600px;
+  max-width: 2000px;
   margin: 0 auto;
   max-height: 100%;
 }
