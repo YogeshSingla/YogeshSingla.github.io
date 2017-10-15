@@ -307,12 +307,21 @@ nav ol {
  * 1. Remove border when inside `a` element in IE 6/7/8/9 and Firefox 3.
  * 2. Improve image quality when scaled in IE 7.
  */
-img {
-  border: 0;
-  /* 1 */
-  -ms-interpolation-mode: bicubic;
-  /* 2 */
+
+img{
+	
+	border: 0;
+
+	align-content: center;
+	opacity: 0.05;
+	transition: opacity 1s;
 }
+
+img:hover{
+	opacity: 0.9;
+}
+
+
 
 /**
  * Correct overflow displayed oddly in IE 9.
@@ -568,17 +577,24 @@ a, b {
 }
 
 a, a:visited {
-  color: #20b0a0;
+  /*color: #20b0a0;*/
+  color: #777777;
   text-decoration: none;
-  border-bottom: 1px solid #ededed;
+  /*border-bottom: 1px solid #dddddd;*/
+  /*border: 2px outset #ffffff;*/
+  transition: border-style 1s;
+  transition: color 0.5s;
 }
 a:hover, a:focus {
-  color: #01aa9c;
-  border-color: #bbb;
+  /*color: #01aa9c;*/
+  color: #000000;
+  /*border-color: #bbb;*/
+  /*border-bottom: 2px inset #aaaaaa;*/
+  border-bottom: : 1px inset #dddddd;
 }
 
 .at {
-  color: #b8d8d5;
+ /* color: #b8d8d5;*/
 }
 
 .the-pug {
