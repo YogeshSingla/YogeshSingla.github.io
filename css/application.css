@@ -533,14 +533,17 @@ body {
 }
 
 .list-entry{
-  margin-left: 50px;
+  padding-left: 50px;
+}
+.list-entry-table{
+  padding-left: 50px;
 }
 .list-entry-line-2{
   margin-left: 502px;
 }
 
 .outer-container {
-  max-width: 1200px;
+  max-width: 1600px;
   margin: 0 auto;
   max-height: 100%;
 }
