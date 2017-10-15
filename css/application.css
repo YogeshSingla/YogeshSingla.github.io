@@ -541,6 +541,7 @@ body {
 
 table{
   align-self: center;
+  align-content: left;
   width: 100%;
   text-align: left;
 }
