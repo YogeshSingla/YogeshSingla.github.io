@@ -561,6 +561,11 @@ table{
     padding: 40px 20px;
   }
 }
+
+.top{
+  max-height: 35%;
+  max-width: 35%;
+}
 .the-pug {
   margin-bottom: 20px;
 }
