@@ -1,0 +1,236 @@
+hp-check[19052]: info: :
+hp-check[19052]: info: :[01mHP Linux Imaging and Printing System (ver. 3.17.7)[0m
+hp-check[19052]: info: :[01mDependency/Version Check Utility ver. 15.1[0m
+hp-check[19052]: info: :
+hp-check[19052]: info: :Copyright (c) 2001-15 HP Development Company, LP
+hp-check[19052]: info: :This software comes with ABSOLUTELY NO WARRANTY.
+hp-check[19052]: info: :This is free software, and you are welcome to distribute it
+hp-check[19052]: info: :under certain conditions. See COPYING file for more details.
+hp-check[19052]: info: :
+hp-check[19052]: info: :[01mNote: hp-check can be run in three modes:[0m
+hp-check[19052]: info: :1. Compile-time check mode (-c or --compile): Use this mode before compiling the
+hp-check[19052]: info: :HPLIP supplied tarball (.tar.gz or .run) to determine if the proper dependencies
+hp-check[19052]: info: :are installed to successfully compile HPLIP.                                    
+hp-check[19052]: info: :2. Run-time check mode (-r or --run): Use this mode to determine if a distro    
+hp-check[19052]: info: :supplied package (.deb, .rpm, etc) or an already built HPLIP supplied tarball   
+hp-check[19052]: info: :has the proper dependencies installed to successfully run.                      
+hp-check[19052]: info: :3. Both compile- and run-time check mode (-b or --both) (Default): This mode    
+hp-check[19052]: info: :will check both of the above cases (both compile- and run-time dependencies).   
+hp-check[19052]: info: :
+hp-check[19052]: info: :Check types:                                                                    
+hp-check[19052]: info: :a. EXTERNALDEP - External Dependencies                                          
+hp-check[19052]: info: :b. GENERALDEP - General Dependencies (required both at compile and run time)    
+hp-check[19052]: info: :c. COMPILEDEP - Compile time Dependencies                                       
+hp-check[19052]: info: :d. [All are run-time checks]                                                    
+hp-check[19052]: info: :PYEXT SCANCONF QUEUES PERMISSION                                                
+hp-check[19052]: info: :
+hp-check[19052]: info: :Status Types:
+hp-check[19052]: info: :    OK
+hp-check[19052]: info: :    MISSING       - Missing Dependency or Permission or Plug-in
+hp-check[19052]: info: :    INCOMPAT      - Incompatible dependency-version or Plugin-version
+hp-check[19052]: info: :
+warning: [01m12-17.10 version is not supported. Using 12-17.04 versions dependencies to verify and install...[0m
+hp-check[19052]: info: :
+hp-check[19052]: info: :---------------
+hp-check[19052]: info: :| SYSTEM INFO |
+hp-check[19052]: info: :---------------
+hp-check[19052]: info: :
+hp-check[19052]: info: : Kernel: 4.13.0-19-generic #22-Ubuntu SMP Mon Dec 4 11:58:07 UTC 2017 GNU/Linux
+ Host: yogesh-HP-Notebook
+ Proc: 4.13.0-19-generic #22-Ubuntu SMP Mon Dec 4 11:58:07 UTC 2017 GNU/Linux
+ Distribution: 12 17.10
+hp-check[19052]: info: : Bitness: 64 bit
+
+hp-check[19052]: info: :
+hp-check[19052]: info: :-----------------------
+hp-check[19052]: info: :| HPLIP CONFIGURATION |
+hp-check[19052]: info: :-----------------------
+hp-check[19052]: info: :
+hp-check[19052]: info: :HPLIP-Version: HPLIP 3.17.7
+hp-check[19052]: info: :HPLIP-Home: /usr/share/hplip
+warning: HPLIP-Installation: Auto installation is not supported for 12 distro  17.10 version 
+hp-check[19052]: info: :
+hp-check[19052]: info: :[01mCurrent contents of '/etc/hp/hplip.conf' file:[0m
+hp-check[19052]: info: :# hplip.conf.  Generated from hplip.conf.in by configure.
+
+[hplip]
+version=3.17.7
+
+[dirs]
+home=/usr/share/hplip
+run=/var/run
+ppd=/usr/share/ppd/hplip/HP
+ppdbase=/usr/share/ppd/hplip
+doc=/usr/share/doc/hplip
+html=/usr/share/doc/hplip-doc
+icon=no
+cupsbackend=/usr/lib/cups/backend
+cupsfilter=/usr/lib/cups/filter
+drv=/usr/share/cups/drv
+bin=/usr/bin
+apparmor=/etc/apparmor.d
+# Following values are determined at configure time and cannot be changed.
+[configure]
+network-build=yes
+libusb01-build=no
+pp-build=yes
+gui-build=yes
+scanner-build=yes
+fax-build=yes
+dbus-build=yes
+cups11-build=no
+doc-build=yes
+shadow-build=no
+hpijs-install=yes
+foomatic-drv-install=yes
+foomatic-ppd-install=yes
+foomatic-rip-hplip-install=no
+hpcups-install=yes
+cups-drv-install=yes
+cups-ppd-install=no
+internal-tag=3.17.7
+restricted-build=no
+ui-toolkit=qt5
+qt3=no
+qt4=no
+qt5=yes
+policy-kit=yes
+lite-build=no
+udev_sysfs_rules=no
+hpcups-only-build=no
+hpijs-only-build=no
+apparmor_build=no
+
+hp-check[19052]: info: :
+hp-check[19052]: info: :[01mCurrent contents of '/var/lib/hp/hplip.state' file:[0m
+hp-check[19052]: info: :Plugins are not installed. Could not access file: No such file or directory
+hp-check[19052]: info: :
+hp-check[19052]: info: :[01mCurrent contents of '~/.hplip/hplip.conf' file:[0m
+hp-check[19052]: info: :[installation]
+date_time = 12/17/17 18:01:34
+version = 3.17.7
+
+
+hp-check[19052]: info: : <Package-name>        <Package-Desc>      <Required/Optional> <Min-Version> <Installed-Version> <Status>   <Comment>
+hp-check[19052]: info: :
+hp-check[19052]: info: :-------------------------
+hp-check[19052]: info: :| External Dependencies |
+hp-check[19052]: info: :-------------------------
+hp-check[19052]: info: :
+hp-check[19052]: info: :[31;01m error: cups          CUPS - Common Unix Printing System                           REQUIRED        1.1             -               INCOMPAT   'CUPS may not be installed or not running'[0m
+hp-check[19052]: info: : gs                   GhostScript - PostScript and PDF language interpreter and previewer REQUIRED        7.05            9.21            OK         -
+hp-check[19052]: info: :[31;01m error: xsane         xsane - Graphical scanner frontend for SANE                  OPTIONAL        0.9             -               MISSING    'xsane needs to be installed'[0m
+hp-check[19052]: info: : scanimage            scanimage - Shell scanning program                           OPTIONAL        1.0             1.0.27          OK         -
+hp-check[19052]: info: :[31;01m error: dbus          DBus - Message bus system                                    REQUIRED        -               1.10.22         MISSING    'DBUS may not be installed or not running'[0m
+hp-check[19052]: info: : policykit            PolicyKit - Administrative policy framework                  OPTIONAL        -               0.105           OK         -
+hp-check[19052]: info: : network              network -wget                                                OPTIONAL        -               1.19.1          OK         -
+hp-check[19052]: info: : avahi-utils          avahi-utils                                                  OPTIONAL        -               0.6.32          OK         -
+hp-check[19052]: info: :
+hp-check[19052]: info: :------------------------
+hp-check[19052]: info: :| General Dependencies |
+hp-check[19052]: info: :------------------------
+hp-check[19052]: info: :
+hp-check[19052]: info: : libjpeg              libjpeg - JPEG library                                       REQUIRED        -               -               OK         -
+hp-check[19052]: info: :[31;01m error: cups-devel    CUPS devel- Common Unix Printing System development files    REQUIRED        -               -               MISSING    'cups-devel needs to be installed'[0m
+hp-check[19052]: info: :[31;01m error: cups-image    CUPS image - CUPS image development files                    REQUIRED        -               -               MISSING    'cups-image needs to be installed'[0m
+hp-check[19052]: info: : libpthread           libpthread - POSIX threads library                           REQUIRED        -               b'2.26'         OK         -
+hp-check[19052]: info: :[31;01m error: libusb        libusb - USB library                                         REQUIRED        -               1.0             MISSING    'libusb needs to be installed'[0m
+hp-check[19052]: info: : sane                 SANE - Scanning library                                      REQUIRED        -               -               OK         -
+hp-check[19052]: info: :[31;01m error: sane-devel    SANE - Scanning library development files                    REQUIRED        -               -               MISSING    'sane-devel needs to be installed'[0m
+hp-check[19052]: info: :[31;01m error: libnetsnmp-devel libnetsnmp-devel - SNMP networking library development files REQUIRED        5.0.9           -               MISSING    'libnetsnmp-devel needs to be installed'[0m
+hp-check[19052]: info: :[31;01m error: libcrypto     libcrypto - OpenSSL cryptographic library                    REQUIRED        -               1.0.2           MISSING    'libcrypto needs to be installed'[0m
+hp-check[19052]: info: : python3X             Python 2.2 or greater - Python programming language          REQUIRED        2.2             3.6.3           OK         -
+hp-check[19052]: info: :[31;01m error: python3-notify2 Python libnotify - Python bindings for the libnotify Desktop notifications OPTIONAL        -               -               MISSING    'python3-notify2 needs to be installed'[0m
+hp-check[19052]: info: :[31;01m error: python3-pyqt4-dbus PyQt 4 DBus - DBus Support for PyQt4                         OPTIONAL        4.0             -               MISSING    'python3-pyqt4-dbus needs to be installed'[0m
+hp-check[19052]: info: :[31;01m error: python3-pyqt4 PyQt 4- Qt interface for Python (for Qt version 4.x)         REQUIRED        4.0             -               MISSING    'python3-pyqt4 needs to be installed'[0m
+hp-check[19052]: info: : python3-dbus         Python DBus - Python bindings for DBus                       REQUIRED        0.80.0          1.2.4           OK         -
+hp-check[19052]: info: : python3-xml          Python XML libraries                                         REQUIRED        -               2.2.3           OK         -
+hp-check[19052]: info: : python3-devel        Python devel - Python development files                      REQUIRED        2.2             3.6.3           OK         -
+hp-check[19052]: info: : python3-pil          PIL - Python Imaging Library (required for commandline scanning with hp-scan) OPTIONAL        -               1.1.7           OK         -
+hp-check[19052]: info: : python3-reportlab    Reportlab - PDF library for Python                           OPTIONAL        2.0             3.4.0           OK         -
+hp-check[19052]: info: :
+hp-check[19052]: info: :--------------
+hp-check[19052]: info: :| COMPILEDEP |
+hp-check[19052]: info: :--------------
+hp-check[19052]: info: :
+hp-check[19052]: info: :[31;01m error: libtool       libtool - Library building support services                  REQUIRED        -               -               MISSING    'libtool needs to be installed'[0m
+hp-check[19052]: info: : gcc                  gcc - GNU Project C and C++ Compiler                         REQUIRED        -               7.2.0           OK         -
+hp-check[19052]: info: : make                 make - GNU make utility to maintain groups of programs       REQUIRED        3.0             4.1             OK         -
+hp-check[19052]: info: :
+hp-check[19052]: info: :---------------------
+hp-check[19052]: info: :| Python Extentions |
+hp-check[19052]: info: :---------------------
+hp-check[19052]: info: :
+hp-check[19052]: info: : cupsext              CUPS-Extension                                               REQUIRED        -               3.17.7          OK         -
+hp-check[19052]: info: : hpmudext             IO-Extension                                                 REQUIRED        -               3.17.7          OK         -
+hp-check[19052]: info: :
+hp-check[19052]: info: :----------------------
+hp-check[19052]: info: :| Scan Configuration |
+hp-check[19052]: info: :----------------------
+hp-check[19052]: info: :
+hp-check[19052]: info: :'/etc/sane.d/dll.d/hpaio' not found.
+hp-check[19052]: info: : hpaio                HPLIP-SANE-Backend                                           REQUIRED        -               3.17.7          OK         'hpaio found in /etc/sane.d/dll.conf'
+hp-check[19052]: info: : scanext              Scan-SANE-Extension                                          REQUIRED        -               3.17.7          OK         -
+hp-check[19052]: info: :
+hp-check[19052]: info: :------------------------------
+hp-check[19052]: info: :| DISCOVERED SCANNER DEVICES |
+hp-check[19052]: info: :------------------------------
+hp-check[19052]: info: :
+hp-check[19052]: info: :No Scanner found.
+hp-check[19052]: info: :
+hp-check[19052]: info: :--------------------------
+hp-check[19052]: info: :| DISCOVERED USB DEVICES |
+hp-check[19052]: info: :--------------------------
+hp-check[19052]: info: :
+hp-check[19052]: info: :No devices found.
+hp-check[19052]: info: :
+hp-check[19052]: info: :---------------------------------
+hp-check[19052]: info: :| INSTALLED CUPS PRINTER QUEUES |
+hp-check[19052]: info: :---------------------------------
+hp-check[19052]: info: :
+hp-check[19052]: info: :
+hp-check[19052]: info: :[01mlpstat[0m
+hp-check[19052]: info: :[01m------[0m
+hp-check[19052]: info: :Type: Unknown
+hp-check[19052]: info: :Device URI: No destinations added.
+hp-check[19052]: info: :
+hp-check[19052]: info: :
+hp-check[19052]: info: :--------------
+hp-check[19052]: info: :| PERMISSION |
+hp-check[19052]: info: :--------------
+hp-check[19052]: info: :
+hp-check[19052]: info: :
+hp-check[19052]: info: :-----------
+hp-check[19052]: info: :| SUMMARY |
+hp-check[19052]: info: :-----------
+hp-check[19052]: info: :
+hp-check[19052]: info: :[01mMissing Required Dependencies[0m
+hp-check[19052]: info: :[01m-----------------------------[0m
+error: 'libcups2' package is missing/incompatible 
+error: 'libdbus-1-dev' package is missing/incompatible 
+error: 'libcups2-dev' package is missing/incompatible 
+error: 'cups-bsd' package is missing/incompatible 
+error: 'cups-client' package is missing/incompatible 
+error: 'libcupsimage2-dev' package is missing/incompatible 
+error: 'libusb-1.0.0-dev' package is missing/incompatible 
+error: 'libsane-dev' package is missing/incompatible 
+error: 'libsnmp-dev' package is missing/incompatible 
+error: 'snmp-mibs-downloader' package is missing/incompatible 
+error: 'openssl' package is missing/incompatible 
+error: 'python3-pyqt4' package is missing/incompatible 
+error: 'gtk2-engines-pixbuf' package is missing/incompatible 
+error: 'libtool' package is missing/incompatible 
+error: 'libtool-bin' package is missing/incompatible 
+hp-check[19052]: info: :
+hp-check[19052]: info: :[01mMissing Optional Dependencies[0m
+hp-check[19052]: info: :[01m-----------------------------[0m
+error: 'gtk2-engines-pixbuf' package is missing/incompatible 
+error: 'xsane' package is missing/incompatible 
+error: 'python3-notify2' package is missing/incompatible 
+error: 'python3-dbus.mainloop.qt' package is missing/incompatible 
+hp-check[19052]: info: :
+hp-check[19052]: info: :Total Errors: 13
+hp-check[19052]: info: :Total Warnings: 0
+hp-check[19052]: info: :
+hp-check[19052]: info: :
+hp-check[19052]: info: :Done.
