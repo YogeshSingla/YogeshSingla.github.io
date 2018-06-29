@@ -629,8 +629,7 @@ a:hover, a:focus {
   display: inline;
   margin: 0 10px;
   list-style-type: none;
-  font-family: monospace;
-  font: monospace;
+  font-family:Courier;
   font-style: normal;
   font-weight: lighter;
 }
