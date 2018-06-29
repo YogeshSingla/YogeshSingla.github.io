@@ -309,7 +309,7 @@ nav ol {
  */
 
 img{
-	
+
 	border: 0;
 
 	align-content: center;
@@ -623,4 +623,7 @@ a:hover, a:focus {
   display: inline;
   margin: 0 10px;
 }
-
+.simple_source{
+  font-size: 12px;
+  padding: 0;
+}
