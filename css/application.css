@@ -630,4 +630,7 @@ a:hover, a:focus {
   margin: 0 10px;
   list-style-type: none;
   font-family: monospace;
+  font: monospace;
+  font-style: normal;
+  font-weight: lighter;
 }
