@@ -626,4 +626,8 @@ a:hover, a:focus {
 .simple_source{
   font-size: 12px;
   padding: 0;
+  display: inline;
+  margin: 0 10px;
+  list-style-type: none;
+  font-family: monospace;
 }
