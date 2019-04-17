@@ -313,7 +313,7 @@ img{
 	border: 0;
 
 	align-content: center;
-	opacity: 0.05;
+	opacity: 0.3;
 	transition: opacity 1s;
 }
 
@@ -548,12 +548,25 @@ table{
 
 .outer-container {
   max-width: 2000px;
-  margin: 0 auto;
+  margin: 0 100px 0 0px;
   max-height: 100%;
+  text-align: center;
+  vertical-align: center;
+
+}
+
+.inner-container-img {
+  float: left;
+  height: 100%;
 }
 
 .inner-container {
-  padding: 40px 20px 70px;
+  float: left;
+  margin-top: 180px;
+  padding-left: 30px;
+  display:block;
+  height: ;
+  vertical-align: middle;
 }
 
 @media only screen and (max-width: 40rem) {
@@ -565,6 +578,10 @@ table{
 .top{
   max-height: 35%;
   max-width: 35%;
+}
+.left_panel{
+  max-height: 100%;
+  max-width: 100%;
 }
 .the-pug {
   margin-bottom: 20px;
@@ -623,13 +640,15 @@ a:hover, a:focus {
   display: inline;
   margin: 0 10px;
 }
+
+
 .simple_source{
-  font-size: 12px;
-  padding: 0;
+  font-size: 20px;
+  padding: 10;
   display: inline;
-  margin: 0 10px;
+  margin: 200px;
   list-style-type: none;
   font-family:Courier;
-  font-style: normal;
-  font-weight: lighter;
+  font-style: bold;
+  font-weight: heavy;
 }
