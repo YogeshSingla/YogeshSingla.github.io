@@ -548,22 +548,26 @@ table{
 
 .outer-container {
   max-width: 2000px;
-  margin: 0 100px 0 0px;
+  margin: 0 auto; /* Centers the container horizontally */
   max-height: 100%;
   text-align: center;
   vertical-align: center;
+  flex-direction: column; /* Stacks children vertically */
+  justify-content: center; /* Vertically centers content */
+  align-items: center; /* Centers content horizontally */
+  display: flex;
 
 }
 
 .inner-container-img {
-  float: left;
-  height: 100%;
+  max-width: 200px;
+  max-height: 100%;
 }
 
 .inner-container {
   float: left;
-  margin-top: 180px;
-  padding-left: 30px;
+  margin-top: 30px;
+  padding-left: 0px;
   display:block;
   height: ;
   vertical-align: middle;
