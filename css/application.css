@@ -656,3 +656,32 @@ a:hover, a:focus {
   font-style: bold;
   font-weight: heavy;
 }
+
+.simple_source_portfolio {
+  font-size: 20px;
+  padding: 10px; /* Added 'px' to padding */
+  display: inline-block; /* Allows the element to respect alignment but still remain inline */
+  margin: 20px; /* Reduced margin for better layout */
+  list-style-type: none;
+  /* font-family: Courier; */
+  text-align: left; /* Aligns the content to the left */
+}
+
+/* Reset inherited styles for .a_portfolio links */
+.a_portfolio {
+  color: blue !important;      /* Ensure the color is blue */
+  text-decoration: none !important; /* Remove underline, overriding other styles */
+  font-weight: normal;         /* Reset font-weight if inherited */
+  font-size: inherit;          /* Ensure the font size is inherited correctly */
+}
+
+/* Hover effect for .a_portfolio links */
+.a_portfolio:hover {
+  color: blue !important;  /* Darker blue on hover */
+  text-decoration: underline !important; /* Underline on hover */
+}
+
+/* Active (clicked) state for .a_portfolio links */
+.a_portfolio:active {
+  color: navy !important;      /* Navy color when active */
+}
