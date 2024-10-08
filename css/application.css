@@ -574,6 +574,22 @@ table{
 }
 
 @media only screen and (max-width: 40rem) {
+  .outer-container {
+    max-width: 2000px;
+    margin: 0 auto; /* Centers the container horizontally */
+    max-height: none; /* Allow it to grow as needed */
+    text-align: center;
+    flex-direction: column; /* Stacks children vertically */
+    justify-content: center; /* Vertically centers content */
+    align-items: center; /* Centers content horizontally */
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap */
+  }
+  
+  .inner-container-img {
+    padding: 40px 20px;
+  }
+
   .inner-container {
     padding: 40px 20px;
   }
